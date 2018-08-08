@@ -258,14 +258,20 @@ header .textos h3 {
 /* ----- ----- FOOTER ----- ----- */
 footer {
 	background: #000;
+	height: 32px;
 }
-
+footer .contenedor{
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
 footer .copyright {
-	text-align: center;
-	padding: 15px 0;
 	color: #fff;
 }
-
+footer .info {
+	color: #fff;
+	font-size: 13px;
+}
 /* ----- ----- MEDIA QUERIES ----- ----- */
 @media screen and (max-width: 800px) {
 	header .contenedor {
@@ -322,6 +328,14 @@ footer .copyright {
 		width: 80%;
 		margin: auto;
 	}
+	footer{
+		height: 100%;
+	}
+	footer .contenedor{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 }
 
 @media screen and (max-width: 400px) {
